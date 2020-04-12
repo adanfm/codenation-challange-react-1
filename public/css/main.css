@@ -191,3 +191,116 @@ body {
 .catalog nav ul li a:hover {
 	box-shadow: inset 0 -1px 0 #e4bb23;
 }
+
+.catalog .movie-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.catalog .movie-list li {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.catalog .movie-list li figure {
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.catalog .movie-list li figure img {
+	width: 100%;
+}
+
+.catalog .movie-list li figure .movie-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	height: 99%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog .movie-list li figure .movie-details h3 {
+	color: #e4bb23;
+	font-size: 1.4em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.catalog .movie-list li figure .movie-details-link {
+	color: #fff;
+	font-size: 5em;
+	transition: color 0.2s ease-in-out;
+}
+
+.catalog .movie-list li figure .movie-details-link:hover {
+	color: #e4bb23;
+}
+
+.catalog .movie-list figure:hover .movie-details {
+	opacity: 1;
+	visibility: visible;
+}
+
+.catalog .movie-list .movie-synopsis {
+	padding: 10px;
+}
+
+.catalog .movie-list .movie-synopsis h3 {
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.catalog .movie-list .movie-sysnopsis-category a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #e4bb23;
+}
+
+.catalog .movie-list .movie-sysnopsis-category {
+	margin: 10px 0;
+	display: flex;
+}
+
+.catalog .movie-list .movie-sysnopsis-category a:hover {
+	text-decoration: underline;
+}
+
+.catalog .movie-list .movie-synopsis .movie-note {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.catalog .movie-list .movie-synopsis .movie-note i {
+	color: #ccc;
+}
+
+.catalog .movie-list .movie-synopsis .movie-note i:hover {
+	color: #ff0000;
+	cursor: pointer;
+}
