@@ -272,19 +272,24 @@ body {
 	text-transform: uppercase;
 }
 
-.catalog .movie-list .movie-sysnopsis-category a {
-	text-decoration: none;
-	font-size: 12px;
-	color: #e4bb23;
-}
-
 .catalog .movie-list .movie-sysnopsis-category {
 	margin: 10px 0;
 	display: flex;
 }
 
+.catalog .movie-list .movie-sysnopsis-category a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #e4bb23;
+	margin-right: 2px;
+}
+
 .catalog .movie-list .movie-sysnopsis-category a:hover {
 	text-decoration: underline;
+}
+
+.catalog .movie-list .movie-sysnopsis-category a:not(:last-child):after  {
+	content: ",";
 }
 
 .catalog .movie-list .movie-synopsis .movie-note {
