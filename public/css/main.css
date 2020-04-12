@@ -22,7 +22,7 @@ body {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	height: 840px;
+	height: 835px;
 	justify-content: space-between;
 	padding: 20px;
 	width: 100%;
@@ -35,7 +35,7 @@ body {
 		rgba(0, 212, 255, 0) 75%
 	);
 	content: "";
-	height: 100%;
+	height: 88%;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -158,4 +158,36 @@ body {
 
 .header-info-place {
 	color: #fff;
+}
+
+.catalog {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.catalog nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 20px;
+	margin: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.catalog nav ul li {
+	margin: 0 20px;
+}
+
+.catalog nav ul li a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #e4bb23;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 21px 0;
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.catalog nav ul li a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
 }
