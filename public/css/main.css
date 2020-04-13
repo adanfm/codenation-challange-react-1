@@ -309,3 +309,50 @@ body {
 	color: #ff0000;
 	cursor: pointer;
 }
+
+.footer {
+	display: inline;
+	background: #fff;
+	color: #bababa;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .footer-list {
+	display: flex;
+	padding: 0;
+	list-style: none;
+}
+
+.footer .footer-list li {
+	margin: 0 20px;
+}
+
+.footer .footer-list li:last-child {
+	margin-right: 0;
+}
+
+.footer .footer-list li a {
+	font-size: 25px;
+	color: #bababa;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+.footer .footer-list li a.icone-twitter:hover {
+	color: #55acee;
+}
+
+.footer .footer-list li a.icone-facebook:hover {
+	color: #3b5998;
+}
+
+.footer .footer-list li a.icone-instagram:hover {
+	color: #e95950;
+}
